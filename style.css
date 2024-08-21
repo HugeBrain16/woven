@@ -1,10 +1,15 @@
 @font-face {
   font-family: nanum;
-  src: url(/assets/nanum.ttf);
+  src: url(/assets/nanum.woff2);
+}
+
+@font-face {
+  font-family: patrickhand;
+  src: url(/assets/patrickhand.woff2);
 }
 
 body {
-  font-family: nanum;
+  font-family: patrickhand, sans-serif;
   background-image: url(/assets/gingham.png);
   margin: 0;
   margin-top: 10px;
@@ -64,6 +69,10 @@ p {
 
 h1, h2, h3 {
   filter: drop-shadow(2px 2px #444);
+}
+
+.alt-font {
+  font-family: nanum, sans-serif;
 }
 
 @media (max-width: 1200px) {
